@@ -1,0 +1,91 @@
+:root {
+  --backgroundInput: #bbbdeb;
+  --backgroundForm: #8180c7;
+  --colorLetraInput: #393444;
+  --formActivo: whitesmoke;
+}
+
+.main {
+  padding-top: 167px;
+  /* height: 120vh; */
+  margin-bottom: 60px;
+  height: auto;
+}
+.h1 {
+  text-align: center;
+}
+.h2 {
+  text-align: center;
+  text-indent: 15px;
+  line-height: 30px;
+}
+.form {
+  min-width: 350px;
+  width: 35%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--backgroundForm);
+  padding: 15px;
+  border-radius: 8px;
+}
+.form input {
+  font-family: inherit;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 15px;
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--backgroundInput);
+  outline: none;
+}
+.form input::placeholder {
+  color: var(--colorLetraInput);
+}
+.form input::-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--colorLetraInput);
+}
+.form input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--colorLetraInput);
+}
+.form input:focus {
+  background-color: var(--formActivo);
+}
+
+.containerButton {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+.containerButton button {
+  font-family: inherit;
+  border: none;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border-radius: 15px;
+  background-color: var(--backgroundInput);
+  transition: background 0.7s ease-out;
+}
+.containerButton button:hover {
+  background-color: var(--formActivo);
+}
+
+.footer {
+  margin-top: 46px;
+}
+@media (max-width: 730px) {
+  .main {
+    padding-top: 126px;
+  }
+}
+@media (max-width: 495px) {
+  .main {
+    padding-top: 189px;
+  }
+}

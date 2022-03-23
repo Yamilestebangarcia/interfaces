@@ -1,0 +1,96 @@
+:root {
+  --mainBackground: rgba(22, 124, 18, 0.26);
+  --hoverTabla: rgba(0, 0, 255, 0.37);
+  --parTabla: rgba(0, 0, 255, 0.17);
+}
+.main {
+  padding-top: 168px;
+  /* height: 120vh; */
+  margin-bottom: 60px;
+  height: auto;
+}
+.h1 {
+  text-align: center;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  width: 90%;
+  background-color: var(--mainBackground);
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px 0px rgb(0, 0, 0, 0.43);
+}
+.h2 {
+  text-align: center;
+}
+.tabla {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  border-collapse: collapse;
+}
+.tabla td {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.tabla :nth-child(even) {
+  background-color: var(--parTabla);
+}
+.tabla tr :nth-child(even) {
+  background-color: transparent;
+}
+.tabla tr:hover {
+  background-color: var(--hoverTabla);
+}
+
+.containerImg {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 100%;
+  justify-content: center;
+  gap: 10%;
+}
+.macropedia,
+.lotus,
+.borland,
+.windows {
+  width: 100px;
+  height: 100px;
+}
+.macropedia {
+  background-image: url("img/Macromedia.jpg");
+}
+.lotus {
+  background-image: url("img/Smartsuite.jpg");
+}
+.borland {
+  background-image: url("img/Borland.jpg");
+}
+.windows {
+  background-image: url("img/Windows-2000.jpg");
+}
+@media (max-width: 730px) {
+  .main {
+    padding-top: 127px;
+  }
+}
+@media (max-width: 625px) {
+  .containerImg {
+    grid-template-columns: auto auto;
+    padding-bottom: 30px;
+  }
+  .footer {
+    margin-top: 25px;
+  }
+  .main {
+    height: auto;
+  }
+}
+@media (max-width: 495px) {
+  .main {
+    padding-top: 188px;
+  }
+}
